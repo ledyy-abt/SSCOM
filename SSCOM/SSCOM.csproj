@@ -53,6 +53,12 @@
     <Compile Include="Main\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\u6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\u6.Designer.cs">
+      <DependentUpon>u6.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\u5.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,6 +107,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\u6.resx">
+      <DependentUpon>u6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\u5.resx">
       <DependentUpon>u5.cs</DependentUpon>
     </EmbeddedResource>

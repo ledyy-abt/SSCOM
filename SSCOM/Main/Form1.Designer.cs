@@ -33,8 +33,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.u21 = new Flash.u2();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.u31 = new Flash.u3();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.u32 = new Flash.u3();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -43,16 +41,18 @@
             this.u41 = new Flash.u4();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.u51 = new SSCOM.u5();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.u6 = new Flash.u6();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,11 +68,11 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.ItemSize = new System.Drawing.Size(85, 20);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
@@ -99,24 +99,6 @@
             this.u21.Name = "u21";
             this.u21.Size = new System.Drawing.Size(431, 470);
             this.u21.TabIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.u31);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(791, 470);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "串口通讯S";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // u31
-            // 
-            this.u31.Location = new System.Drawing.Point(185, 0);
-            this.u31.Name = "u31";
-            this.u31.Size = new System.Drawing.Size(421, 470);
-            this.u31.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -191,11 +173,22 @@
             this.u51.Size = new System.Drawing.Size(421, 219);
             this.u51.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.u6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(791, 470);
+            this.tabPage3.TabIndex = 6;
+            this.tabPage3.Text = "SPI通信";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(768, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(799, 17);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // statusStrip1
@@ -216,6 +209,13 @@
             this.panel1.Size = new System.Drawing.Size(814, 547);
             this.panel1.TabIndex = 0;
             // 
+            // u6
+            // 
+            this.u6.Location = new System.Drawing.Point(185, 0);
+            this.u6.Name = "u6";
+            this.u6.Size = new System.Drawing.Size(421, 470);
+            this.u6.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -232,11 +232,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -249,12 +249,10 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Panel panel1;
-        private u3 u31;
         private u3 u32;
         private u2 u21;
         private System.Windows.Forms.TabPage tabPage5;
@@ -262,6 +260,8 @@
         private u4 u41;
         private System.Windows.Forms.TabPage tabPage6;
         private SSCOM.u5 u51;
+        private System.Windows.Forms.TabPage tabPage3;
+        private u6 u6;
     }
 }
 
